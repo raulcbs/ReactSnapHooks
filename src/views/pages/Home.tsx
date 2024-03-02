@@ -29,6 +29,7 @@ export function HomePage() {
           <div className=" w-full flex gap-5 items-center text-gray-500 ">
             {INITIAL_LINKS.map(({ href, name }) => (
               <Link
+                key={name}
                 href={href}
                 className="hover:text-gray-900 transition-color duration-100 ease-in"
               >
